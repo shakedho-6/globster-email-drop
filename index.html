@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Globster Weekly Drop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #f4f4f4;
+      font-family: 'Inter', Arial, sans-serif;
+      color: #1a1a1a;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .email-wrapper {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+
+    /* HEADER */
+    .header {
+      background: #ffffff;
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #0a0a0a;
+      background: #f0f0f0;
+      padding: 6px 16px;
+      border-radius: 100px;
+      display: inline-block;
+      white-space: nowrap;
+      margin-left: auto;
+    }
+
+    /* HERO */
+    .hero {
+      background: #ffffff;
+      padding: 8px 16px;
+      text-align: center;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .hero-box {
+      background: #0a0a0a;
+      border-radius: 16px;
+      padding: 56px 48px;
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      font-size: 16px;
+      font-weight: 400;
+      color: #ffffff;
+      margin-bottom: 0;
+    }
+
+    /* BODY */
+    .body {
+      padding: 40px 40px 0;
+    }
+
+    .greeting {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    .intro {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      padding-bottom: 0;
+    }
+
+    .intro strong { color: #0a0a0a; }
+
+    /* FEATURE BLOCKS */
+    .features-title {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #aaa;
+      padding: 32px 40px 20px;
+    }
+
+    .feature-block {
+      display: flex;
+      gap: 40px;
+      padding: 28px 40px;
+      border-bottom: 1px solid #f0f0f0;
+      align-items: center;
+    }
+
+    .feature-block:last-of-type {
+      border-bottom: none;
+    }
+
+    .feature-img {
+      width: 90px;
+      height: 90px;
+      min-width: 90px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .feature-content { flex: 1; }
+
+    .feature-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      background: #e8f4ff;
+      color: #0072cc;
+    }
+
+    .feature-content h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #0a0a0a;
+      margin-bottom: 6px;
+    }
+
+    .feature-content p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* CTA */
+    .cta-section {
+      padding: 40px 40px;
+      text-align: center;
+      background: #ffffff;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    .cta-text {
+      font-size: 18px;
+      font-weight: 600;
+      color: #0a0a0a;
+      margin-bottom: 8px;
+    }
+
+    .cta-sub {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 24px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #E92F23;
+      color: #ffffff !important;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 16px 40px;
+      border-radius: 8px;
+      letter-spacing: 0.3px;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 32px 40px;
+      text-align: center;
+      background: #fff;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    footer p {
+      font-size: 12px;
+      color: #bbb;
+      line-height: 1.8;
+    }
+
+    footer a { color: #bbb; }
+  </style>
+</head>
+<body>
+
+<div class="email-wrapper">
+
+  <!-- HEADER -->
+  <div style="background:#ffffff;padding:24px 40px;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td valign="middle">
+        <a href="https://app.globster.ai" target="_blank">
+          <img src="https://res.cloudinary.com/dtejgv6gw/image/upload/v1778166397/globster-email/globster-logo.jpg" alt="Globster" height="36" style="display:block;" />
+        </a>
+      </td>
+      <td valign="middle" align="right">
+        <span style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#0a0a0a;background:#f0f0f0;padding:6px 16px;border-radius:100px;white-space:nowrap;">Weekly Drop</span>
+      </td>
+    </tr></table>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-box">
+      <h1>We broke WhatsApp.<br>Then we fixed it.</h1>
+      <h2>Plus everything else we shipped this week.</h2>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="body">
+    <p class="greeting">Hey {{{contact.first_name|there}}},</p>
+    <p class="intro">
+      We owe you an honest moment. Our WhatsApp connection was glitchy. Connections dropped and messages didn't go through.<br /><br />
+      We heard you — and we fixed it.
+    </p>
+    <p class="intro" style="padding-top:24px;">
+      But that's not all. Here's what dropped this week:
+    </p>
+  </div>
+
+  <!-- FEATURES LABEL -->
+  <p class="features-title">This week's drop</p>
+
+  <!-- FEATURE 1 — WhatsApp Fix -->
+  <div class="feature-block">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td width="90" valign="middle" style="padding-right:32px;">
+        <a href="https://app.globster.ai" target="_blank">
+          <img src="https://res.cloudinary.com/dtejgv6gw/image/upload/v1778166604/globster-email/whatsapp-feature-png.png" width="90" height="90" style="display:block;object-fit:contain;" />
+        </a>
+      </td>
+      <td valign="middle">
+        <span class="feature-tag fix">Fix</span>
+        <h3 style="font-size:16px;font-weight:600;color:#0a0a0a;margin-bottom:6px;">WhatsApp Integration — Rebuilt</h3>
+        <p style="font-size:16px;color:#333;line-height:1.7;margin:0;">Stable connections that don't drop. Instant delivery. Full two-way sync with your agent. <strong>Works now.</strong> (Globi's tip: don't connect your personal number — get an eSIM for your agent.)</p>
+      </td>
+    </tr></table>
+  </div>
+
+  <!-- FEATURE 2 — Queued Messages -->
+  <div class="feature-block">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td width="90" valign="middle" style="padding-right:32px;">
+        <a href="https://app.globster.ai" target="_blank">
+          <img src="https://res.cloudinary.com/dtejgv6gw/image/upload/v1778166605/globster-email/queued-feature-png.png" width="90" height="90" style="display:block;object-fit:contain;" />
+        </a>
+      </td>
+      <td valign="middle">
+        <span class="feature-tag new">New</span>
+        <h3 style="font-size:16px;font-weight:600;color:#0a0a0a;margin-bottom:6px;">Queued Messages</h3>
+        <p style="font-size:16px;color:#333;line-height:1.7;margin:0;">Send your agent messages while it's working. They'll be saved and delivered the moment it's free — your agent never misses a beat.</p>
+      </td>
+    </tr></table>
+  </div>
+
+  <!-- FEATURE 3 — Credits Optimization -->
+  <div class="feature-block">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td width="90" valign="middle" style="padding-right:32px;">
+        <a href="https://app.globster.ai" target="_blank">
+          <img src="https://res.cloudinary.com/dtejgv6gw/image/upload/v1778166607/globster-email/credits-feature-png.png" width="90" height="90" style="display:block;object-fit:contain;" />
+        </a>
+      </td>
+      <td valign="middle">
+        <span class="feature-tag improvement">Improvement</span>
+        <h3 style="font-size:16px;font-weight:600;color:#0a0a0a;margin-bottom:6px;">Credits Consumption Optimization</h3>
+        <p style="font-size:16px;color:#333;line-height:1.7;margin:0;">Your agent now does more with less. Smarter credit usage across all tasks — same power, lower cost.</p>
+      </td>
+    </tr></table>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <p class="cta-text">Your agent is waiting.</p>
+    <p class="cta-sub">Time to put it to work.</p>
+    <a href="https://app.globster.ai" target="_blank" class="cta-btn">Go to Your Globster →</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div style="text-align:center; margin-bottom:16px;">
+      <a href="https://www.linkedin.com/company/globster-ai" target="_blank" style="display:inline-block; text-decoration:none; margin:0 8px;">
+        <img src="https://res.cloudinary.com/dtejgv6gw/image/upload/v1778167441/globster-email/linkedin-icon.png" width="24" height="24" alt="LinkedIn" style="display:inline-block; opacity:0.5;" />
+      </a>
+      <a href="https://x.com/Globster_ai" target="_blank" style="display:inline-block; text-decoration:none; margin:0 8px;">
+        <img src="https://res.cloudinary.com/dtejgv6gw/image/upload/v1778167442/globster-email/x-icon.png" width="20" height="20" alt="X" style="display:inline-block; opacity:0.5;" />
+      </a>
+    </div>
+    <p>
+      You're receiving this because you're a Globster user.<br />
+      <a href="{{{RESEND_UNSUBSCRIBE_URL}}}" target="_blank">Unsubscribe</a> · <a href="https://app.globster.ai" target="_blank">Globster.ai</a>
+    </p>
+    <p style="margin-top: 8px;">© 2026 Globster · monday agent labs</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
