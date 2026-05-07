@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="tkiaad-glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"></stop>
+      <stop offset="0.5" stop-color="#f4f5f8" stop-opacity="0.85"></stop>
+      <stop offset="1" stop-color="#e8eaf0" stop-opacity="0.9"></stop>
+    </linearGradient>
+    <linearGradient id="tkiaad-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"></stop>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.3"></stop>
+    </linearGradient>
+    <linearGradient id="tkiaad-gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.7"></stop>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"></stop>
+    </linearGradient>
+    <filter id="tkiaad-soft" x="-30%" y="-20%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"></feGaussianBlur>
+      <feOffset dy="4"></feOffset>
+      <feComponentTransfer><feFuncA type="linear" slope="0.22"></feFuncA></feComponentTransfer>
+      <feMerge><feMergeNode></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
+    </filter>
+  </defs>
+  <ellipse cx="64" cy="120" rx="52" ry="4" fill="#0a0a0a" opacity="0.1"></ellipse>
+  <g filter="url(#tkiaad-soft)">
+    <rect x="8" y="8" width="112" height="112" rx="22" fill="url(#tkiaad-glass)"></rect>
+    <rect x="10" y="10" width="108" height="48" rx="20" fill="url(#tkiaad-gloss)"></rect>
+    <rect x="8.5" y="8.5" width="111" height="111" rx="21.5" fill="none" stroke="url(#tkiaad-rim)" stroke-width="1.4"></rect>
+    <rect x="8" y="8" width="112" height="112" rx="22" fill="none" stroke="#0a0a0a" stroke-opacity="0.07"></rect>
+  </g>
+  <defs>
+  <linearGradient id="redCap" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FF8466"></stop>
+    <stop offset="0.55" stop-color="#FF5A3C"></stop>
+    <stop offset="1" stop-color="#C8331A"></stop>
+  </linearGradient>
+  <linearGradient id="redGloss" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.65"></stop>
+    <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"></stop>
+  </linearGradient>
+  <linearGradient id="whiteBody" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff"></stop>
+    <stop offset="1" stop-color="#d4d8e0"></stop>
+  </linearGradient>
+  <linearGradient id="whiteGloss" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"></stop>
+    <stop offset="0.55" stop-color="#ffffff" stop-opacity="0"></stop>
+  </linearGradient>
+  <filter id="dropS" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="1.5"></feGaussianBlur>
+    <feOffset dy="2"></feOffset>
+    <feComponentTransfer><feFuncA type="linear" slope="0.3"></feFuncA></feComponentTransfer>
+    <feMerge><feMergeNode></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
+  </filter>
+</defs>
+  
+  <g filter="url(#dropS)">
+    <g transform="translate(3 4)" opacity="0.18"><rect x="40" y="32" width="56" height="36" rx="6" fill="#0a0a0a"></rect></g>
+    <rect x="40" y="32" width="56" height="36" rx="6" fill="url(#whiteBody)" stroke="#0a0a0a" stroke-opacity="0.1"></rect>
+    <rect x="40" y="32" width="56" height="10" rx="6" fill="#9aa0ad" opacity="0.4"></rect>
+  </g>
+  
+  <g filter="url(#dropS)">
+    <g transform="translate(3 4)" opacity="0.18"><rect x="34" y="48" width="62" height="38" rx="7" fill="#0a0a0a"></rect></g>
+    <rect x="34" y="48" width="62" height="38" rx="7" fill="url(#whiteBody)" stroke="#0a0a0a" stroke-opacity="0.1"></rect>
+    <rect x="34" y="48" width="62" height="10" rx="7" fill="#9aa0ad" opacity="0.5"></rect>
+  </g>
+  
+  <g filter="url(#dropS)">
+    <g transform="translate(3 4)" opacity="0.22"><rect x="28" y="64" width="68" height="42" rx="8" fill="#0a0a0a"></rect></g>
+    <rect x="28" y="64" width="68" height="42" rx="8" fill="url(#whiteBody)" stroke="#0a0a0a" stroke-opacity="0.12"></rect>
+    <path d="M28 72 a8 8 0 0 1 8 -8 H88 a8 8 0 0 1 8 8 V80 H28 Z" fill="url(#redCap)"></path>
+    <path d="M30 72 a6 6 0 0 1 6 -6 H88" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1"></path>
+    <rect x="36" y="86" width="36" height="4" rx="2" fill="#cdd1d8"></rect>
+    <rect x="36" y="94" width="20" height="4" rx="2" fill="#cdd1d8"></rect>
+  </g>
+
+</svg>
